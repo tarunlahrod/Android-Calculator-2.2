@@ -232,15 +232,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onBackPressed()
-    {
+    {       
+        super.onBackPressed();
         Intent i2 = new Intent(MainActivity.this, last.class);
         startActivity(i2);
-        super.onDestroy();
+        //super.onDestroy();
     }
-
-
-
-
 }
 
 
